@@ -72,8 +72,14 @@ getTable();
 // */
 function isLeapYear(){
 let year = +prompt("Enter a year");
-if((year % 4 == 0) || (year % 400 == 0)) {
+if((year % 400 == 0)) {
   alert(`leap year`);
+}
+else if(year % 100 == 0){
+  alert(`not a leap year`);
+}
+else if(year % 4 == 0){
+  alert(`leap year`)
 }
 else 
   alert(`not a leap year`);
